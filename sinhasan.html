@@ -5,80 +5,74 @@
   <title>Sinhasan</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <link rel="shortcut icon" href="img/silogo.ico">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <style>
-    .fakeimg {
-      height: 200px;
-      background: #aaa;
-    }
-  </style>
+  <link rel="shortcut icon" href="img/silogo.ico">  
+  <link href="css/bootstrap-4-navbar.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  
+ 
 </head>
 
 <body>
   <div class="alert-light text-center" style="margin-bottom:0">
-   <a href="index.html"> <img src="img/Spangle.png" class="col-sm-6"></a>
+   <a href="index.html"> <img src="img/Spangle.png" class="col-sm-4"></a>
     <p>Resize this responsive page to see the effect!</p>
   </div>
-  <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+  
+  <!-- Static navbar -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
     <a class="navbar-brand" href="index.html"> <img src="img/spanglewhite.png" width="130"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
+    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>        
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Kitchenwares
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Puran Patra</a>
-            <a class="dropdown-item" href="#">Sev Sancha Big</a>           
-            <a class="dropdown-item" href="#">Sev Sancha Small</a>
-            <a class="dropdown-item" href="#">Puran jali</a>
-            <a class="dropdown-item" href="#">Greter</a>
-            <a class="dropdown-item" href="#">Masala Peti</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Pooja Articles
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item active" href="#">Sinhasan</a>
-            <a class="dropdown-item" href="#">Phoolary</a>
-            <a class="dropdown-item" href="#">Pooja Peti</a>
-            <a class="dropdown-item" href="#">Mandir</a>
-            <a class="dropdown-item" href="#">Jhoola</a>            
-            <a class="dropdown-item" href="#">Hawankund</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Utensils
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Pandan</a>
-            <a class="dropdown-item" href="#">Storage Box</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Dustpen</a>
-          </div>
-        </li>
-
-
-      </ul>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" 
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Products
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    
+                    <li><a class="dropdown-item dropdown-toggle" href="#">Kitchenwares </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Puran patra</a></li>
+                            <li><a class="dropdown-item" href="#">Puran Jali</a></li>
+                            <li><a class="dropdown-item" href="#">Sev Sancha Big</a></li>
+                            <li><a class="dropdown-item" href="#">Sev sancha Small</a></li>
+                            <li><a class="dropdown-item" href="#">Masala Peti</a></li>
+                            <li><a class="dropdown-item" href="#">Greater</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li><a class="dropdown-item dropdown-toggle" href="#">Pooja Articles </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Sinhasan</a></li>
+                            <li><a class="dropdown-item" href="#">Mandir</a></li>
+                            <li><a class="dropdown-item" href="#">Pooja Peti</a></li>
+                            <li><a class="dropdown-item" href="#">Phoolary</a></li>
+                            <li><a class="dropdown-item" href="#">Hawankumd</a></li>
+                            <li><a class="dropdown-item" href="#">Jhula</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li><a class="dropdown-item dropdown-toggle" href="#">Utensils </a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Pandan</a></li>
+                          <li><a class="dropdown-item" href="#">StorageBox</a></li>
+                          <li><a class="dropdown-item" href="#">Dustpen</a></li>
+                         
+                      </ul>
+                  </li>
+                </ul>
+            </li>
+        </ul>
     </div>
-
-  </nav>
+</nav>
 
   <div class="container-fluid bg-light pt-4">
     <div class="row">
@@ -385,6 +379,17 @@
       2020 All Right Reserved ||
       Spangle And Si Logo are registered Trademark of Shilpa Industries</p></p>
   </div>
+
+
+ 
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+    <script src="js/bootstrap-4-navbar.js"></script>
+
 
 
 </body>
