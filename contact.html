@@ -52,7 +52,7 @@
                         </li>
                         <li><a class="dropdown-item dropdown-toggle" href="#">Pooja Articles </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item " href="#">Sinhasan<span class="sr-only">(current)</a></li>
+                                <li><a class="dropdown-item " href="sinhasan.html">Sinhasan<span class="sr-only">(current)</a></li>
                                 <li><a class="dropdown-item" href="#">Mandir</a></li>
                                 <li><a class="dropdown-item" href="#">Pooja Peti</a></li>
                                 <li><a class="dropdown-item" href="#">Phoolary</a></li>
@@ -78,10 +78,10 @@
         </div>
     </nav>
 
-    <div class="container-fluid pt-2 pb-2">
+    <div class="container-fluid pt-1 pb-1 pl-1" >
 
 
-        <div class="row bg-light">
+        <div class="row bg-light"> 
 
             <!--   <img src="/img/bg-01.jpg" class="col-md-5  img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">      
             
@@ -264,43 +264,11 @@
     </div>
 
 
-    <script>
-        function sayHi() {
-
-            var enq='--- Contact Details ---' + '<br/>'            
-            + 'Full Name :- ' + document.getElementById("fname").value + '<br/>' 
-            + '   E-mail :- ' + document.getElementById("email").value + '<br/>'
-            + '    Phone :- ' + document.getElementById("phone").value + '<br/>'
-            + '     City :- ' + document.getElementById("city").value + '<br/>'
-            + '    State :- ' + document.getElementById("state").value + '<br/>'
-            + '      Zip :- ' + document.getElementById("zip").value + '<br/>' 
-            + '      --- Message ---' + '<br/>'
-            + '  Message :- ' + document.getElementById("message").value + '<br/>'
-
-            Email.send({
-                SecureToken: '196b57c0-c730-404c-9326-a53fe2ebc1e0',
-                To: 'info@spangle.in',
-                From: 'mail@spangle.in',
-                Subject: 'from site mail',
-                Body: enq
-            }).then(
-                message => alert(message)
-            );
-            setTimeout(sayhello, 4000)
-
-        }
-        function sayhello() {
-
-            window.location.reload()
-        }
-
-
-    </script>
+   
 
 
 
-
-
+<script src="/js/contact.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
