@@ -1,14 +1,14 @@
 
 function sayHi() {
-    var enq='--- Contact Details ---' + '<br/>'            
-    + 'Full Name :- ' + document.getElementById("fname").value + '<br/>' 
-    + '   E-mail :- ' + document.getElementById("email").value + '<br/>'
-    + '    Phone :- ' + document.getElementById("phone").value + '<br/>'
-    + '     City :- ' + document.getElementById("city").value + '<br/>'
-    + '    State :- ' + document.getElementById("state").value + '<br/>'
-    + '      Zip :- ' + document.getElementById("zip").value + '<br/>' 
-    + '      --- Message ---' + '<br/>'
-    + '  Message :- ' + document.getElementById("message").value + '<br/>'
+    var enq='------ Contact Details ------' + '<br/>'            
+    + 'Full Name : ' + document.getElementById("fname").value + '<br/>' 
+    + '   E-mail : ' + document.getElementById("email").value + '<br/>'
+    + '    Phone : ' + document.getElementById("phone").value + '<br/>'
+    + '     City : ' + document.getElementById("city").value + '<br/>'
+    + '    State : ' + document.getElementById("state").value + '<br/>'
+    + '      Zip : ' + document.getElementById("zip").value + '<br/>' + '<br/>' 
+    + '      ------ Message ------' + '<br/>'
+    + '  Message : ' + document.getElementById("message").value + '<br/>'
 
    
     Email.send({
